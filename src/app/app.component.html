@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<button [disabled]="isDisabled">{{title}}</button>
+<app-header></app-header>
+<hr>
+<app-child (newItemEvent)="addItem($event)"></app-child>
+<h3>Загальний перелік завдань:</h3>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>

@@ -1,0 +1,5 @@
+<p>app-child works!</p>
+
+<label for="item-input">Введіть завдання:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Додати</button>
